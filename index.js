@@ -37,6 +37,7 @@ function generatePasswordTwo(){
     resultTwo.textContent = passwordTwo.join("")
 }
 
+console.log(characters.length);
 
 // click event
 function populatePasswords(){
