@@ -91,6 +91,7 @@ button {
     height: 2rem;
 }
 
-#copy-pw:hover {
+#copy-pw-one:hover,
+#copy-pw-two:hover {
     color: rgb(206, 204, 204);
 }
