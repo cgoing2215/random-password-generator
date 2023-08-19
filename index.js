@@ -44,3 +44,27 @@ function populatePasswords(){
     generatePasswordOne();
     generatePasswordTwo();
 }
+
+// copy to clipboard
+let copyBtnOne = document.querySelector("#copy-pw-one")
+let copyBtnTwo = document.querySelector("#copy-pw-two")
+
+const copyContentOne = async () => {
+    try {
+      await navigator.clipboard.writeText(passwordOne);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+    copyBtnOne.textContent = "Copied!"
+  }
+
+const copyContentTwo = async () => {
+    try {
+      await navigator.clipboard.writeText(passwordTwo);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+    copyBtnTwo.textContent = "Copied!"
+  }
