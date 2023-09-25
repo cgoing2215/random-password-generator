@@ -7,11 +7,11 @@
     </head>
     <body>
         <div>
-            <h1>
+            <h1 class="heading">
                 Generate a<br>
                 <span class="green">random password</span>
             </h1>
-            <p>Never use an insecure password again.</p>
+            <p class="site-statement">Never use an insecure password again.</p>
             <button onclick="populatePasswords()">Generate passwords</button>
         </div>
         <div class="line"></div>
@@ -24,6 +24,9 @@
                 <p id="result-two"></p>
                 <button onclick="copyContentTwo()"  id="copy-pw-two">Copy</button>
             </div>
+        </div>
+        <div id="mode-switch">
+            <button onclick="switchMode()" id="mode-toggle">Light Mode</button>
         </div>
         <script src="index.js"></script>
     </body>

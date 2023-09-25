@@ -68,3 +68,57 @@ const copyContentTwo = async () => {
     }
     copyBtnTwo.textContent = "Copied!"
   }
+
+  // dark mode vs light mode
+      // [default is dark mode]
+    let body = document.querySelector("body");
+    let heading = document.querySelector(".heading")
+    let modeBtn = document.querySelector("#mode-toggle")
+    let statement = document.querySelector(".site-statement")
+    let resultBoxOne = document.querySelector("#result-one p")
+    let resultBoxTwo = document.querySelector("#result-two p")
+    let midLine = document.querySelector(".line")
+
+  function switchMode() {
+    if (body.classList.contains("lightModeBody")){
+      body.classList.remove("lightModeBody")
+    } else {
+      body.classList.add("lightModeBody");
+    }
+
+    if (heading.classList.contains("lightModeHeading")){
+      heading.classList.remove("lightModeHeading")
+    } else {
+      heading.classList.add("lightModeHeading");
+    }
+
+    if (modeBtn.classList.contains("lightModeButton")){
+      modeBtn.classList.remove("lightModeButton")
+      modeBtn.textContent = "Light Mode"
+    } else {
+      modeBtn.classList.add("lightModeButton");
+      modeBtn.textContent = "Dark Mode"
+    }
+
+    if (statement.classList.contains("lightModeStatement")){
+      statement.classList.remove("lightModeStatement")
+    } else {
+      statement.classList.add("lightModeStatement");
+    }
+
+    if (resultBoxOne.classList.contains("lightModeResult")){
+      resultBoxOne.classList.remove("lightModeResult")
+      resultBoxTwo.classList.remove("lightModeResult")
+    } else {
+      resultBoxOne.classList.add("lightModeResult");
+      resultBoxTwo.classList.add("lightModeResult");
+    }
+
+    if (midLine.classList.contains("lightModeLine")){
+      midLine.classList.remove("lightModeLine")
+    } else {
+      midLine.classList.add("lightModeLine");
+    }
+
+
+  }
